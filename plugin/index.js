@@ -56,6 +56,7 @@ var ChatView = (function (_super) {
         GridLayout.GridLayout.setRow(this._messageList, 0);
         this._sendMessageArea = new GridLayout.GridLayout();
         this._sendMessageArea.className = "nsChatView-sendMessageArea";
+        this._sendMessageArea.id = "sendMessageArea";
         this._sendMessageArea.addRow(new GridLayout.ItemSpec(1, "auto"));
         this._sendMessageArea.addColumn(new GridLayout.ItemSpec(1, "star"));
         this._sendMessageArea.addColumn(new GridLayout.ItemSpec(1, "auto"));
